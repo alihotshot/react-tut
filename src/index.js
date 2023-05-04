@@ -1,8 +1,9 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+import React from 'react'
+import ReactDOM from 'react-dom/client'
 
-function Greeting(){
-  return <h2>My First Application</h2>
+function Greeting() {
+  return <h2>Interface</h2> 
 }
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<Greeting />);
+
+const root = ReactDOM.createRoot(document.getElementById('root'))
+root.render(<Greeting />)
