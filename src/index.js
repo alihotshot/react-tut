@@ -7,7 +7,7 @@ const BookList = () => {
       <Book />
     </section>
   )
-};
+}
 
 const Book = () => {
   return (
@@ -16,14 +16,19 @@ const Book = () => {
       <Title />
       <Author />
     </article>
-  );
-};
+  )
+}
 
-const Image = () => <h2>Image Placeholder</h2>;
-const Title = () => <h2>Title of the Book</h2>;
+const Image = () => (
+  <img
+    src="https://images-na.ssl-images-amazon.com/images/I/71zwHcw-D7L._AC_UL600_SR600,400_.jpg"
+    alt="I Will Teach You to Be Rich"
+  />
+)
+const Title = () => <h2>I Will Teach You to Be Rich</h2>
 const Author = () => {
-  return <h4>Author</h4>;
-};
+  return <h4>Ramit Sethi</h4>
+}
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(<BookList />)
