@@ -35,7 +35,7 @@ body {
 
 .book img {
   object-fit: cover;
-  width: 100%;
+  /* width: 100%; */
 }
 
 .book h2 {
@@ -52,4 +52,10 @@ body {
 .book p{
   font-size: 0.75rem;
   margin-top: 0.6rem;
+}
+
+.book button {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  font-size: 0.9rem;
 }

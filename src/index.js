@@ -2,50 +2,50 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './style.css'
 
-const firstBook = {
-  img: './images/Book1.webp',
-  title: 'Power of Chemistry',
-  author: 'John Delta',
-}
+const books = [
+  {
+    img: './images/Book1.webp',
+    title: 'Power of Chemistry',
+    author: 'John Delta',
+  },
+  {
+    img: './images/Book2.webp',
+    title: 'Atomic Habit',
+    author: 'Elon Musk',
+  },
+]
 
-const secondBook = {
-  img: './images/Book2.webp',
-  title: 'Atomic Habit',
-  author: 'Elon Musk',
-}
+const names = ['Book1', 'Book2']
 
 const BookList = () => {
   return (
     <section className="booklist">
-      <Book
-        img={firstBook.img}
-        title={firstBook.title}
-        author={firstBook.author}
-      >
-        <p>
-          Think differently and find the courage to challenge the status quo
-          with this mindset-shifting guide here.
-        </p>
-      </Book>
-      <Book
-        img={secondBook.img}
-        title={secondBook.title}
-        author={secondBook.author}
-      />
+      {names.map((items) => {
+        return <h2>items</h2>
+      })}
     </section>
   )
 }
 
-// Call properties as a special props & children props
-const Book = ({ img, title, author, children }) => {
+const Book = ({ img, title, author }) => {
   return (
     <article className="book">
-      <img src='{img}' alt='{title}' />
+      <img src={img} alt={title} />
       <h2>{title}</h2>
       <h4>{author}</h4>
-      {children}
     </article>
   )
+
+  // Call properties as a special props & children props
+  // const Book = ({ img, title, author, children }) => {
+  //   return (
+  //     <article className="book">
+  //       <img src={img} alt={title} />
+  //       <h2>{title}</h2>
+  //       <h4>{author}</h4>
+  //       {children}
+  //     </article>
+  //   )
 }
 
 // Access properties without dot in Props
