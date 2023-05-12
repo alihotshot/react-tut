@@ -15,13 +15,12 @@ const books = [
   },
 ]
 
-const names = ['Book1', 'Book2']
-
 const BookList = () => {
   return (
     <section className="booklist">
-      {names.map((items) => {
-        return <h2>items</h2>
+      {books.map((book) => {
+        const { img, title, author } = book
+        return <Book img={img} title={title} author={author} />
       })}
     </section>
   )
