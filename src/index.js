@@ -35,31 +35,7 @@ const Book = ({ img, title, author }) => {
       <h4>{author}</h4>
     </article>
   )
-
-  // Call properties as a special props & children props
-  // const Book = ({ img, title, author, children }) => {
-  //   return (
-  //     <article className="book">
-  //       <img src={img} alt={title} />
-  //       <h2>{title}</h2>
-  //       <h4>{author}</h4>
-  //       {children}
-  //     </article>
-  //   )
 }
-
-// Access properties without dot in Props
-
-// const Book = (props) => {
-//   const { img, title, author } = props
-//   return (
-//     <article className="book">
-//       <img src={img} alt={title} />
-//       <h2>{title}</h2>
-//       <h4>{author}</h4>
-//     </article>
-//   )
-// }
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(<BookList />)
